@@ -13,7 +13,7 @@ function gridMapping(squareGrid) {
   const pixels = document.querySelectorAll('.element');
   pixels.forEach(pixel => {
     pixel.addEventListener('mouseover', function(e) {
-      e.target.style.backgroundColor = 'navy';
+      e.target.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 0)`;
     })
   })
 };
